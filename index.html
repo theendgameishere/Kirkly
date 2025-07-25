@@ -353,21 +353,31 @@
     </div>
   </section>
 
-  <footer>
-    <div class="container mx-auto py-8 px-6 text-center">
-      <p class="text-base">© 2025 Stephanie Kirkley Cleaning & Organizing. All Rights Reserved. | Your Local Cleaning & Organizing Pros</p>
-      <p class="text-base mt-2">Serving Wetumpka, Montgomery, and surrounding areas.</p>
+  <footer style="background: #18181b; color: #d1d3db; padding: 2.5rem 0 1.2rem 0; box-shadow: 0 -8px 32px 0 rgba(0,0,0,0.11);">
+  <div class="container px-6 mx-auto text-center">
+    <div class="mb-3">
+      <span style="font-size:1.08rem; font-weight:600; letter-spacing:.04em;">
+        © 2025 Stephanie Kirkley Cleaning & Organizing
+      </span>
+      <span style="color:#a0aec0; margin-left: 10px;">
+        | Your Local Cleaning & Organizing Pros
+      </span>
     </div>
-  </footer>
-</main>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init({ duration: 700, once: true, offset: 50 });
-  const pageUrl = encodeURIComponent(window.location.href);
-  const pageTitle = encodeURIComponent(document.title);
-  document.getElementById('share-facebook').href = `https://www.facebook.com/sharer/sharer.php?u=${pageUrl}`;
-  document.getElementById('share-x').href = `https://twitter.com/intent/tweet?url=${pageUrl}&text=${pageTitle}`;
-  document.getElementById('share-email').href = `mailto:?subject=${pageTitle}&body=Check out this cleaning & organizing service: ${pageUrl}`;
-</script>
-</body>
-</html>
+    <div class="mb-3" style="font-size: 1rem;">
+      Serving Wetumpka, Montgomery, and surrounding areas.<br>
+      <a href="mailto:info@stephaniekirkleycleaning.com" style="color:#e5e7eb; text-decoration:underline;">info@stephaniekirkleycleaning.com</a>
+      &nbsp;|&nbsp;
+      <a href="tel:+13345551234" style="color:#e5e7eb; text-decoration:underline;">(334) 555-1234</a>
+    </div>
+    <div style="margin-top: 1.1rem;">
+      <!-- Optional: Add mini social icons if you want them in the footer as well
+      <a href="https://facebook.com/" target="_blank" style="margin: 0 8px;">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" width="22" alt="Facebook" style="filter: invert(92%);">
+      </a>
+      -->
+    </div>
+  </div>
+</footer>
+
+<!-- Aminos Chat Plugin -->
+<script src="https://app.aminos.ai/js/chat_plugin.js" data-bot-id="53123"></script>
