@@ -102,7 +102,7 @@
       .share-btn .share-tooltip { right: unset; left: 55px; bottom: 120%;}
     }
     .contact-map { border-radius: .8rem; border: 2px solid #22262a; box-shadow: 0 2px 16px 0 rgba(0,0,0,0.17);}
-    footer { background: #101014; color: #b8bac1; }
+    footer { background: #18181b; color: #d1d3db; }
   </style>
 </head>
 <body>
@@ -168,7 +168,33 @@
     </div>
   </div>
 </header>
-
+<main>
+  <!-- Problem Section -->
+  <section class="py-14" id="problem">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold section-title mb-4" data-aos="fade-up">Finding a Reliable Cleaning Service Shouldn't Be Hard.</h2>
+      <p class="text-lg section-sub max-w-2xl mx-auto mb-10" data-aos="fade-up" data-aos-delay="100">
+        Tired of inconsistent cleaners, hidden fees, or impersonal franchise services? We bring owner-led accountability and a personal touch to every job.
+      </p>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="p-6 service-card" data-aos="fade-up" data-aos-delay="200">
+          <svg class="w-14 h-14 mx-auto mb-3 text-silver" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+          <h3 class="text-xl font-semibold section-title mb-2">Unreliable Results</h3>
+          <p class="text-base section-sub">Many cleaning companies send new people every time—results vary and trust is lost.</p>
+        </div>
+        <div class="p-6 service-card" data-aos="fade-up" data-aos-delay="300">
+          <svg class="w-14 h-14 mx-auto mb-3 text-silver" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+          <h3 class="text-xl font-semibold section-title mb-2">Hidden Costs</h3>
+          <p class="text-base section-sub">Franchise cleaners often hide fees and upcharges. We offer transparent, upfront pricing.</p>
+        </div>
+        <div class="p-6 service-card" data-aos="fade-up" data-aos-delay="400">
+          <svg class="w-14 h-14 mx-auto mb-3 text-silver" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-1.414 1.414M6.343 17.657l-1.414 1.414M12 12l6 6m0-6l-6 6"></path></svg>
+          <h3 class="text-xl font-semibold section-title mb-2">Lack of Personal Touch</h3>
+          <p class="text-base section-sub">Big brands can’t match the care and attention of a true local business. We’re in your community, every day.</p>
+        </div>
+      </div>
+    </div>
+  </section>
   <!-- Services Section -->
   <section class="py-14" id="services">
     <div class="container mx-auto px-6">
@@ -191,7 +217,8 @@
         <div class="flex flex-col rounded-xl shadow-2xl overflow-hidden service-card" data-aos="fade-up" data-aos-delay="300">
           <img src="https://images.pexels.com/photos/3616764/pexels-photo-3616764.jpeg" alt="Organized garage" class="w-full h-56 object-cover" loading="lazy">
           <div class="p-7 flex-grow">
-            <h3 class="text-2xl font-bold section-title mb-2">Garage, Basement & Attic Cleaning</h3>
+            <h3 class="text-2xl font-bold section-title mb-2">
+              Garage, Basement & Attic Cleaning</h3>
             <p class="text-base section-sub">Declutter and deep clean storage spaces—restore order and peace of mind.</p>
           </div>
         </div>
@@ -214,6 +241,7 @@
       </div>
     </div>
   </section>
+
   <!-- Testimonials Section -->
   <section class="py-14" id="testimonials">
     <div class="container mx-auto px-6">
@@ -292,6 +320,7 @@
       </div>
     </div>
   </section>
+
   <!-- Contact Section -->
   <section class="py-14" id="contact">
     <div class="container mx-auto px-6">
@@ -352,8 +381,10 @@
       </div>
     </div>
   </section>
+</main>
 
-  <footer style="background: #18181b; color: #d1d3db; padding: 2.5rem 0 1.2rem 0; box-shadow: 0 -8px 32px 0 rgba(0,0,0,0.11);">
+<!-- Footer Section -->
+<footer style="background: #18181b; color: #d1d3db; padding: 2.5rem 0 1.2rem 0; box-shadow: 0 -8px 32px 0 rgba(0,0,0,0.11);">
   <div class="container px-6 mx-auto text-center">
     <div class="mb-3">
       <span style="font-size:1.08rem; font-weight:600; letter-spacing:.04em;">
@@ -369,15 +400,19 @@
       &nbsp;|&nbsp;
       <a href="tel:+13345551234" style="color:#e5e7eb; text-decoration:underline;">(334) 555-1234</a>
     </div>
-    <div style="margin-top: 1.1rem;">
-      <!-- Optional: Add mini social icons if you want them in the footer as well
-      <a href="https://facebook.com/" target="_blank" style="margin: 0 8px;">
-        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" width="22" alt="Facebook" style="filter: invert(92%);">
-      </a>
-      -->
-    </div>
   </div>
 </footer>
 
 <!-- Aminos Chat Plugin -->
 <script src="https://app.aminos.ai/js/chat_plugin.js" data-bot-id="53123"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 700, once: true, offset: 50 });
+  const pageUrl = encodeURIComponent(window.location.href);
+  const pageTitle = encodeURIComponent(document.title);
+  document.getElementById('share-facebook').href = `https://www.facebook.com/sharer/sharer.php?u=${pageUrl}`;
+  document.getElementById('share-x').href = `https://twitter.com/intent/tweet?url=${pageUrl}&text=${pageTitle}`;
+  document.getElementById('share-email').href = `mailto:?subject=${pageTitle}&body=Check out this cleaning & organizing service: ${pageUrl}`;
+</script>
+</body>
+</html>
