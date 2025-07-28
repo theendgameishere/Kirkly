@@ -11,8 +11,8 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <style>
     :root {
-      --deep-bg: #0d0d0d; /* Deeper, more elegant black */
-      --lighter-bg: #141414; /* Softer black for cards */
+      --deep-bg: #0d0d0d;
+      --lighter-bg: #141414;
       --card-gradient: linear-gradient(135deg, #1a1a1a 90%, #101010 100%);
       --platinum: #f5f5f7;
       --silver: #d1d5db;
@@ -32,46 +32,28 @@
     nav#main-nav {
       position: fixed;
       top: 0; left: 0; right: 0; z-index: 1000;
-      background: rgba(13, 13, 13, 0.85); /* Semi-transparent deep black */
-      backdrop-filter: blur(10px); /* Frosted glass effect */
+      background: rgba(13, 13, 13, 0.85);
+      backdrop-filter: blur(10px);
       box-shadow: var(--shadow);
       border-bottom: 1px solid #222;
     }
     .hero-section {
-      background: linear-gradient(120deg, var(--deep-bg) 80%, #000 100%);
+      background: linear-gradient(120deg, #17191c 70%, #25272b 100%);
       min-height: calc(100vh - 100px);
-      display: flex; flex-direction: column; justify-content: center; padding-top: 80px;
+      display: flex; flex-direction: column; justify-content: center; padding-top: 90px;
     }
     .hero-title {
-      font-size: 2.1rem; font-weight: 700; margin-bottom: .5rem; letter-spacing: -1px;
+      font-size: 2.5rem; font-weight: 700; margin-bottom: .2rem; letter-spacing: -1px;
     }
     @media (min-width: 480px) { .hero-title { font-size: 2.8rem; } }
     @media (min-width: 640px) { .hero-title { font-size: 3.5rem; } }
     @media (min-width: 1024px) { .hero-title { font-size: 4.1rem; } }
-    .card, .service-card, .testimonial-card, .faq-item, .trust-badge-card {
-      background: var(--lighter-bg);
-      border: 1px solid #2a2a2a;
-      border-radius: 1.2rem;
-      box-shadow: var(--shadow);
-      color: var(--platinum);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    .card:hover, .service-card:hover, .testimonial-card:hover, .trust-badge-card:hover {
-        transform: translateY(-8px);
-        box-shadow: var(--shadow-hover);
-    }
-    .card input, .card textarea {
-      background: #0d0d0d !important;
-      color: var(--platinum) !important;
-      border: 1px solid #333 !important;
-      border-radius: 0.5rem;
-    }
     .cta-button {
-      background: linear-gradient(90deg, #fff 0%, #e2e2e2 100%);
-      color: #0d0d0d;
+      background: linear-gradient(90deg, #b4ffd3 0%, #a3e9f5 100%);
+      color: #15191d;
       font-weight: bold;
       font-size: 1.35rem;
-      box-shadow: 0 4px 24px 0 rgba(0,0,0,0.28);
+      box-shadow: 0 8px 36px 0 rgba(120,190,170,0.20);
       transition: transform 0.2s, box-shadow 0.2s;
       border: none;
       padding-left: 2.5rem;
@@ -81,52 +63,10 @@
       transform: scale(1.05);
       box-shadow: var(--shadow-hover);
     }
-    .share-bar {
-      position: fixed; top: 50%; right: 18px; z-index: 1200;
-      display: flex; flex-direction: column; gap: 10px; transform: translateY(-50%);
-    }
-    .share-btn {
-      width: 44px; height: 44px; display: flex; align-items: center; justify-content: center;
-      background: var(--lighter-bg);
-      border-radius: 9999px;
-      box-shadow: 0 3px 18px 0 rgba(0,0,0,0.28);
-      border: 1.5px solid #282a31;
-      transition: box-shadow .2s, transform .15s;
-      cursor: pointer;
-      position: relative;
-    }
-    .share-btn:hover { box-shadow: var(--shadow-hover); transform: scale(1.09);}
-    .share-btn svg { width: 22px; height: 22px; fill: var(--silver);}
-    .share-tooltip {
-      position: absolute; right: 55px; background: #101014; color: #e6e7eb; font-size: .97rem;
-      padding: 6px 14px; border-radius: 9999px; box-shadow: 0 2px 10px 0 rgba(80,80,80,0.13);
-      opacity: 0; pointer-events: none; transition: opacity .2s; white-space: nowrap;
-    }
-    .share-btn:hover .share-tooltip { opacity: 1;}
-    @media (max-width: 768px) {
-      .share-bar { flex-direction: row; top: unset; bottom: 16px; right: 50%; left: 50%; transform: translateX(40%) scale(.95);}
-      .share-btn .share-tooltip { right: unset; left: 55px; bottom: 120%;}
-    }
-    .contact-map { border-radius: .8rem; border: 2px solid #222; box-shadow: 0 2px 16px 0 rgba(0,0,0,0.17);}
-    footer { background: #101010; color: #d1d3db; }
   </style>
 </head>
 <body>
-<!-- Floating Share Bar -->
-<div class="share-bar" aria-label="Share">
-  <a class="share-btn" id="share-facebook" title="Share on Facebook" href="#" tabindex="0">
-    <svg viewBox="0 0 32 32"><path d="M29 0H3C1.3 0 0 1.3 0 3v26c0 1.7 1.3 3 3 3h13V20h-4v-5h4v-3c0-4.1 2.5-6.3 6.1-6.3 1.7 0 3.3.1 3.7.2v4.3h-2.6c-2 0-2.4 1-2.4 2.4v3.1h4.8l-.6 5h-4.2v12h8c1.7 0 3-1.3 3-3V3c0-1.7-1.3-3-3-3z"/></svg>
-    <span class="share-tooltip">Share on Facebook</span>
-  </a>
-  <a class="share-btn" id="share-x" title="Share on X" href="#" tabindex="0">
-    <svg viewBox="0 0 32 32"><path d="M24.8 7.2H31L19.8 20.1 31 32h-9.2l-7.6-8.5-8.8 8.5H1l12.1-13.5L1 0h9.2l7 7.9 8.6-7.9zm-2.1 22.3h2.7L9.1 2.3H6.3z"/></svg>
-    <span class="share-tooltip">Share on X</span>
-  </a>
-  <a class="share-btn" id="share-email" title="Share by Email" href="#" tabindex="0">
-    <svg viewBox="0 0 32 32"><path d="M29.333 5.333H2.667C1.2 5.333 0 6.533 0 8v16c0 1.467 1.2 2.667 2.667 2.667h26.667C30.8 26.667 32 25.467 32 24V8c0-1.467-1.2-2.667-2.667-2.667zM29.333 10.467l-12.367 9.467c-.28.213-.6.32-.933.32s-.653-.107-.933-.32L2.667 10.467V8l13.333 10.227L29.333 8v2.467z"/></svg>
-    <span class="share-tooltip">Share by Email</span>
-  </a>
-</div>
+<!-- NAVIGATION -->
 <nav id="main-nav" class="py-4">
   <div class="container px-6 flex justify-between items-center">
     <a href="#home" class="text-2xl font-bold section-title">Stephanie Kirkley Cleaning & Organizing</a>
@@ -138,6 +78,50 @@
     </div>
   </div>
 </nav>
+<!-- HERO SECTION -->
+<header class="hero-section" id="home">
+  <div class="container px-6 py-14 md:py-24 text-center relative z-10" data-aos="fade-in">
+    <!-- LOGO -->
+    <div style="
+      display:inline-block;
+      background:rgba(23,25,28,0.93);
+      border-radius:2.2rem;
+      box-shadow:0 12px 40px 0 rgba(0,0,0,0.16);
+      padding: 28px 34px 20px 34px;
+      margin-bottom:2.5rem;
+      max-width:440px;
+      ">
+      <img 
+        src="https://files.oaiusercontent.com/file_000000002af461f68961fbb8a702b7f9.png"
+        alt="Stephanie Kirkley Cleaning & Organizing Logo"
+        style="
+          width: 100%;
+          max-width: 360px;
+          height: auto;
+          display: block;
+          margin: 0 auto;
+        "
+        loading="eager"
+        fetchpriority="high"
+        data-aos="zoom-in"
+      >
+    </div>
+    <!-- Business Name & Taglines -->
+    <h1 class="hero-title section-title" data-aos="fade-up" data-aos-delay="100">
+      Stephanie Kirkley Cleaning & Organizing
+    </h1>
+    <p class="mt-2 mb-3 text-lg md:text-2xl section-sub max-w-2xl mx-auto" style="color:#d1d5db;" data-aos="fade-up" data-aos-delay="200">
+      Transform Your Home or Business with Meticulous Cleaning & Organizing<br class="hidden md:block">
+      Owner-Led Service in Wetumpka, Montgomery & Beyond for 15+ Years
+    </p>
+    <!-- Call to Action -->
+    <div class="mt-8" data-aos="fade-up" data-aos-delay="300">
+      <a href="#contact" class="cta-button inline-block py-4 px-16 rounded-full text-2xl shadow-lg font-bold">
+        Book Your Deep Clean
+      </a>
+    </div>
+  </div>
+</header>
 
 <!-- HERO SECTION - NEW VERSION -->
 <header class="hero-section" id="home">
