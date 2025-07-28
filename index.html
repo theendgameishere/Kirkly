@@ -3,215 +3,427 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Stephanie Kirkley Cleaning & Organizing | Local Cleaning Experts</title>
-  <meta name="description" content="Owner-led cleaning and organizing service based in Wetumpka, AL. Serving Montgomery and surrounding areas for over 15 years with trusted, detailed care.">
-  <meta name="keywords" content="cleaning service, organizing, Wetumpka, Montgomery, deep clean, professional cleaners, home organizing, move-out cleaning, office cleaning, Alabama cleaners">
-
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.stephaniekirkleycleaning.com">
-  <meta property="og:title" content="Stephanie Kirkley Cleaning & Organizing | Local Cleaning Experts">
-  <meta property="og:description" content="Owner-led cleaning and organizing service based in Wetumpka, AL. Serving Montgomery and surrounding areas for over 15 years with trusted, detailed care.">
-  <meta property="og:image" content="https://raw.githubusercontent.com/theendgameishere/Kirkly/refs/heads/main/aac37603-5adf-440a-b8b9-f71b7f714eb8_20250725_081040_0000.png">
-
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://www.stephaniekirkleycleaning.com">
-  <meta property="twitter:title" content="Stephanie Kirkley Cleaning & Organizing | Local Cleaning Experts">
-  <meta property="twitter:description" content="Owner-led cleaning and organizing service based in Wetumpka, AL. Serving Montgomery and surrounding areas for over 15 years with trusted, detailed care.">
-  <meta property="twitter:image" content="https://raw.githubusercontent.com/theendgameishere/Kirkly/refs/heads/main/aac37603-5adf-440a-b8b9-f71b7f714eb8_20250725_081040_0000.png">
-
-  <!-- Preload -->
-  <link rel="preload" as="image" href="https://raw.githubusercontent.com/theendgameishere/Kirkly/refs/heads/main/aac37603-5adf-440a-b8b9-f71b7f714eb8_20250725_081040_0000.png">
-
-  <!-- Fonts & Styles -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <title>Stephanie Kirkley Cleaning & Organizing</title>
+  <meta name="description" content="Professional house, garage, and commercial cleaning in Wetumpka and Montgomery, AL. 15+ years of meticulous service. Book your deep clean today!">
+  <meta name="keywords" content="cleaning Wetumpka, house cleaning Montgomery, deep cleaning Wetumpka, move out cleaning Wetumpka, garage cleaning, home organizing AL">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontSize: {
-            xs: ['0.875rem', { lineHeight: '1.25rem' }],
-            sm: ['1rem', { lineHeight: '1.5rem' }],
-            base: ['1.25rem', { lineHeight: '1.875rem' }],
-            lg: ['1.375rem', { lineHeight: '1.875rem' }],
-            xl: ['1.625rem', { lineHeight: '2.125rem' }],
-            '2xl': ['2rem', { lineHeight: '2.5rem' }],
-            '3xl': ['2.5rem', { lineHeight: '2.75rem' }],
-            '4xl': ['3rem', { lineHeight: '1' }],
-            '5xl': ['4rem', { lineHeight: '1' }],
-            '6xl': ['5rem', { lineHeight: '1' }],
-            '7xl': ['6rem', { lineHeight: '1' }],
-            '8xl': ['7rem', { lineHeight: '1' }],
-          },
-          spacing: {
-            10: '2.5rem',
-            12: '3rem',
-            16: '4rem',
-            20: '5rem',
-            24: '6rem',
-            28: '7rem',
-            32: '8rem',
-            36: '9rem',
-            48: '12rem',
-            64: '16rem',
-            96: '24rem',
-            108: '27rem',
-            120: '30rem'
-          }
-        }
-      }
-    }
-  </script>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-  <!-- Schema.org JSON-LD -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Stephanie Kirkley Cleaning & Organizing",
-    "image": "https://raw.githubusercontent.com/theendgameishere/Kirkly/refs/heads/main/aac37603-5adf-440a-b8b9-f71b7f714eb8_20250725_081040_0000.png",
-    "email": "info@stephaniekirkleycleaning.com",
-    "telephone": "+13345551234",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Wetumpka",
-      "addressRegion": "AL",
-      "addressCountry": "US"
-    },
-    "areaServed": {
-      "@type": "GeoCircle",
-      "geoMidpoint": {
-        "@type": "GeoCoordinates",
-        "latitude": 32.5412,
-        "longitude": -86.2471
-      },
-      "geoRadius": "50000"
-    },
-    "description": "Owner-led cleaning and organizing service based in Wetumpka, AL. Serving Montgomery and surrounding areas for over 15 years.",
-    "url": "https://www.stephaniekirkleycleaning.com",
-    "serviceType": "Residential & Commercial Cleaning, Home Organizing"
-  }
-  </script>
-
   <style>
     :root {
-      --dark: #111827;
-      --dark-2: #1F2937;
-      --accent: #FBBF24;
+      --deep-bg: #0d0d0d; /* Deeper, more elegant black */
+      --lighter-bg: #141414; /* Softer black for cards */
+      --card-gradient: linear-gradient(135deg, #1a1a1a 90%, #101010 100%);
+      --platinum: #f5f5f7;
+      --silver: #d1d5db;
+      --shadow: 0 8px 40px 0 rgba(0,0,0,0.45);
+      --shadow-hover: 0 16px 60px 0 rgba(0,0,0,0.65);
     }
-    html, body { overflow-x: hidden; }
-    body {
-      font-family: 'Roboto', sans-serif;
-      background-color: var(--dark);
-      color: #e5e7eb;
-      position: relative;
+    html, body {
+      background: var(--deep-bg);
+      color: var(--platinum);
+      overflow-x: hidden;
     }
-    h1, h2, h3, h4, p, a, strong, span, li, summary, label, input, textarea, button {
-      color: inherit;
-    }
-    h1, h2, h3 {
-      font-family: 'Poppins', sans-serif;
+    body { font-family: 'Roboto', sans-serif; position: relative;}
+    h1, h2, h3, h4 { font-family: 'Poppins', sans-serif; font-weight: 700; }
+    .container { max-width: 1100px; margin-left: auto; margin-right: auto; }
+    .section-title { color: var(--platinum); }
+    .section-sub { color: var(--silver);}
+    nav#main-nav {
+      position: fixed;
+      top: 0; left: 0; right: 0; z-index: 1000;
+      background: rgba(13, 13, 13, 0.85); /* Semi-transparent deep black */
+      backdrop-filter: blur(10px); /* Frosted glass effect */
+      box-shadow: var(--shadow);
+      border-bottom: 1px solid #222;
     }
     .hero-section {
-      position: relative;
-      background-color: var(--dark);
-      min-height: calc(100vh - 150px);
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding-top: 80px;
+      background: linear-gradient(120deg, var(--deep-bg) 80%, #000 100%);
+      min-height: calc(100vh - 100px);
+      display: flex; flex-direction: column; justify-content: center; padding-top: 80px;
     }
-    .gradient-text {
-      background: -webkit-linear-gradient(45deg, var(--accent), #F59E0B);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+    .hero-title {
+      font-size: 2.1rem; font-weight: 700; margin-bottom: .5rem; letter-spacing: -1px;
+    }
+    @media (min-width: 480px) { .hero-title { font-size: 2.8rem; } }
+    @media (min-width: 640px) { .hero-title { font-size: 3.5rem; } }
+    @media (min-width: 1024px) { .hero-title { font-size: 4.1rem; } }
+    .card, .service-card, .testimonial-card, .faq-item, .trust-badge-card {
+      background: var(--lighter-bg);
+      border: 1px solid #2a2a2a;
+      border-radius: 1.2rem;
+      box-shadow: var(--shadow);
+      color: var(--platinum);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover, .service-card:hover, .testimonial-card:hover, .trust-badge-card:hover {
+        transform: translateY(-8px);
+        box-shadow: var(--shadow-hover);
+    }
+    .card input, .card textarea {
+      background: #0d0d0d !important;
+      color: var(--platinum) !important;
+      border: 1px solid #333 !important;
+      border-radius: 0.5rem;
     }
     .cta-button {
-      transition: all .3s ease;
-      box-shadow: 0 4px 15px rgba(251,191,36,.2);
+      background: linear-gradient(90deg, #fff 0%, #e2e2e2 100%);
+      color: #0d0d0d;
+      font-weight: bold;
+      font-size: 1.35rem;
+      box-shadow: 0 4px 24px 0 rgba(0,0,0,0.28);
+      transition: transform 0.2s, box-shadow 0.2s;
+      border: none;
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
     }
     .cta-button:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 8px 25px rgba(251,191,36,.4);
+      transform: scale(1.05);
+      box-shadow: var(--shadow-hover);
     }
-    #problem, #testimonials, #faq {
-      background-color: var(--dark-2);
+    .share-bar {
+      position: fixed; top: 50%; right: 18px; z-index: 1200;
+      display: flex; flex-direction: column; gap: 10px; transform: translateY(-50%);
     }
-    #services, #trust, #contact {
-      background-color: var(--dark);
+    .share-btn {
+      width: 44px; height: 44px; display: flex; align-items: center; justify-content: center;
+      background: var(--lighter-bg);
+      border-radius: 9999px;
+      box-shadow: 0 3px 18px 0 rgba(0,0,0,0.28);
+      border: 1.5px solid #282a31;
+      transition: box-shadow .2s, transform .15s;
+      cursor: pointer;
+      position: relative;
     }
-    footer {
-      background-color: var(--dark-2);
+    .share-btn:hover { box-shadow: var(--shadow-hover); transform: scale(1.09);}
+    .share-btn svg { width: 22px; height: 22px; fill: var(--silver);}
+    .share-tooltip {
+      position: absolute; right: 55px; background: #101014; color: #e6e7eb; font-size: .97rem;
+      padding: 6px 14px; border-radius: 9999px; box-shadow: 0 2px 10px 0 rgba(80,80,80,0.13);
+      opacity: 0; pointer-events: none; transition: opacity .2s; white-space: nowrap;
     }
-    .testimonial-card, .faq-item, .trust-badge-card {
-      background-color: var(--dark-2);
+    .share-btn:hover .share-tooltip { opacity: 1;}
+    @media (max-width: 768px) {
+      .share-bar { flex-direction: row; top: unset; bottom: 16px; right: 50%; left: 50%; transform: translateX(40%) scale(.95);}
+      .share-btn .share-tooltip { right: unset; left: 55px; bottom: 120%;}
     }
-    input[type="text"], input[type="email"], textarea {
-      background-color: var(--dark) !important;
-      border-color: rgba(255, 255, 255, 0.1) !important;
-      color: #e5e7eb !important;
-    }
-    input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
-      border-color: var(--accent) !important;
-      box-shadow: 0 0 0 3px rgba(251, 191, 36, 0.5) !important;
-    }
-    .hero-section img {
-      width: 85% !important;
-      max-width: 500px !important;
-      height: auto !important;
-      margin-bottom: 3rem !important;
-    }
-    @media (min-width: 768px) {
-      .hero-section img {
-        max-width: 600px !important;
-        margin-bottom: 4rem !important;
-      }
-    }
-    @media (min-width: 1024px) {
-      .hero-section img {
-        max-width: 700px !important;
-      }
-    }
-    #aminos-chat-plugin {
-      transform: scale(1.4) !important;
-      right: 40px !important;
-      bottom: 40px !important;
-      transform-origin: bottom right;
-      z-index: 1000;
-    }
-    #main-nav {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: 1000;
-      background-color: rgba(31, 41, 55, 0.8);
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
-      transition: top 0.3s;
-      border-bottom: 1px solid rgba(255,255,255,0.1);
-    }
+    .contact-map { border-radius: .8rem; border: 2px solid #222; box-shadow: 0 2px 16px 0 rgba(0,0,0,0.17);}
+    footer { background: #101010; color: #d1d3db; }
   </style>
 </head>
-<body class="text-gray-200">
+<body>
+<!-- Floating Share Bar -->
+<div class="share-bar" aria-label="Share">
+  <a class="share-btn" id="share-facebook" title="Share on Facebook" href="#" tabindex="0">
+    <svg viewBox="0 0 32 32"><path d="M29 0H3C1.3 0 0 1.3 0 3v26c0 1.7 1.3 3 3 3h13V20h-4v-5h4v-3c0-4.1 2.5-6.3 6.1-6.3 1.7 0 3.3.1 3.7.2v4.3h-2.6c-2 0-2.4 1-2.4 2.4v3.1h4.8l-.6 5h-4.2v12h8c1.7 0 3-1.3 3-3V3c0-1.7-1.3-3-3-3z"/></svg>
+    <span class="share-tooltip">Share on Facebook</span>
+  </a>
+  <a class="share-btn" id="share-x" title="Share on X" href="#" tabindex="0">
+    <svg viewBox="0 0 32 32"><path d="M24.8 7.2H31L19.8 20.1 31 32h-9.2l-7.6-8.5-8.8 8.5H1l12.1-13.5L1 0h9.2l7 7.9 8.6-7.9zm-2.1 22.3h2.7L9.1 2.3H6.3z"/></svg>
+    <span class="share-tooltip">Share on X</span>
+  </a>
+  <a class="share-btn" id="share-email" title="Share by Email" href="#" tabindex="0">
+    <svg viewBox="0 0 32 32"><path d="M29.333 5.333H2.667C1.2 5.333 0 6.533 0 8v16c0 1.467 1.2 2.667 2.667 2.667h26.667C30.8 26.667 32 25.467 32 24V8c0-1.467-1.2-2.667-2.667-2.667zM29.333 10.467l-12.367 9.467c-.28.213-.6.32-.933.32s-.653-.107-.933-.32L2.667 10.467V8l13.333 10.227L29.333 8v2.467z"/></svg>
+    <span class="share-tooltip">Share by Email</span>
+  </a>
+</div>
+<nav id="main-nav" class="py-4">
+  <div class="container px-6 flex justify-between items-center">
+    <a href="#home" class="text-2xl font-bold section-title">Stephanie Kirkley Cleaning & Organizing</a>
+    <div class="hidden md:flex items-center space-x-8">
+      <a href="#services" class="text-lg hover:text-white transition-colors">Services</a>
+      <a href="#trust" class="text-lg hover:text-white transition-colors">About</a>
+      <a href="#testimonials" class="text-lg hover:text-white transition-colors">Testimonials</a>
+      <a href="#contact" class="cta-button py-2 px-6 rounded-full text-lg shadow-lg">Contact</a>
+    </div>
+  </div>
+</nav>
 
-<!-- Your existing <nav>, <header>, <main>, and <footer> content goes here unchanged -->
+<!-- HERO SECTION - NEW VERSION -->
+<header class="hero-section" id="home">
+  <div class="container px-6 py-16 md:py-28 text-center relative z-10" data-aos="fade-in">
+    <img 
+      src="https://share.google/arXVgnVEcoyqp7HNh"
+      alt="Stephanie Kirkley Cleaning & Organizing"
+      style="
+        width: auto;
+        max-width: 420px;
+        max-height: 600px;
+        height: auto;
+        display: block;
+        margin: 0 auto 2rem auto;
+        border-radius: 1.5rem;
+        box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
+        object-fit: cover;
+      "
+      data-aos="zoom-in"
+    >
+    <h1 class="hero-title section-title" data-aos="fade-up" data-aos-delay="100">
+      Stephanie Kirkley Cleaning & Organizing
+    </h1>
+    <p class="mt-3 text-base md:text-xl section-sub max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="200">
+      Transform Your Home or Business with Meticulous Cleaning & Organizing<br class="hidden md:block">
+      Owner-Led Service in Wetumpka, Montgomery & Beyond for 15+ Years
+    </p>
+    <div class="mt-8" data-aos="fade-up" data-aos-delay="300">
+      <a href="#contact" class="cta-button inline-block py-4 px-16 rounded-full text-2xl shadow-lg font-bold">
+        Book Your Deep Clean
+      </a>
+    </div>
+  </div>
+</header>
 
-<!-- AOS & Aminos Scripts -->
+<main>
+  <!-- Problem Section -->
+  <section class="py-20" id="problem">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold section-title mb-4" data-aos="fade-up">Finding a Reliable Cleaning Service Shouldn't Be Hard.</h2>
+      <p class="text-lg section-sub max-w-2xl mx-auto mb-10" data-aos="fade-up" data-aos-delay="100">
+        Tired of inconsistent cleaners, hidden fees, or impersonal franchise services? We bring owner-led accountability and a personal touch to every job.
+      </p>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="p-6 service-card" data-aos="fade-up" data-aos-delay="200">
+          <svg class="w-14 h-14 mx-auto mb-3 text-silver" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+          <h3 class="text-xl font-semibold section-title mb-2">Unreliable Results</h3>
+          <p class="text-base section-sub">Many cleaning companies send new people every time—results vary and trust is lost.</p>
+        </div>
+        <div class="p-6 service-card" data-aos="fade-up" data-aos-delay="300">
+          <svg class="w-14 h-14 mx-auto mb-3 text-silver" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+          <h3 class="text-xl font-semibold section-title mb-2">Hidden Costs</h3>
+          <p class="text-base section-sub">Franchise cleaners often hide fees and upcharges. We offer transparent, upfront pricing.</p>
+        </div>
+        <div class="p-6 service-card" data-aos="fade-up" data-aos-delay="400">
+          <svg class="w-14 h-14 mx-auto mb-3 text-silver" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-1.414 1.414M6.343 17.657l-1.414 1.414M12 12l6 6m0-6l-6 6"></path></svg>
+          <h3 class="text-xl font-semibold section-title mb-2">Lack of Personal Touch</h3>
+          <p class="text-base section-sub">Big brands can’t match the care and attention of a true local business. We’re in your community, every day.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Services Section -->
+  <section class="py-20" id="services">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-14">
+        <h2 class="text-3xl md:text-4xl font-bold section-title" data-aos="fade-up">
+          The <span class="section-title">Stephanie Kirkley Cleaning & Organizing</span> Standard of Excellence
+        </h2>
+        <p class="text-lg section-sub max-w-2xl mx-auto mt-4" data-aos="fade-up" data-aos-delay="100">
+          We clean and organize with the attention to detail you deserve—whether it's your home, office, or garage. No job is too big or too small.
+        </p>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="flex flex-col rounded-xl shadow-2xl overflow-hidden service-card" data-aos="fade-zoom-in" data-aos-delay="200">
+          <img src="https://images.pexels.com/photos/4239035/pexels-photo-4239035.jpeg" alt="Professional cleaning kitchen counter" class="w-full h-56 object-cover" loading="lazy">
+          <div class="p-7 flex-grow">
+            <h3 class="text-2xl font-bold section-title mb-2">Deep House Cleaning</h3>
+            <p class="text-base section-sub">Thorough, top-to-bottom cleans for homes of any size. Perfect for regular upkeep or special occasions.</p>
+          </div>
+        </div>
+        <div class="flex flex-col rounded-xl shadow-2xl overflow-hidden service-card" data-aos="fade-zoom-in" data-aos-delay="300">
+          <img src="https://images.pexels.com/photos/3616764/pexels-photo-3616764.jpeg" alt="Organized garage" class="w-full h-56 object-cover" loading="lazy">
+          <div class="p-7 flex-grow">
+            <h3 class="text-2xl font-bold section-title mb-2">
+              Garage, Basement & Attic Cleaning</h3>
+            <p class="text-base section-sub">Declutter and deep clean storage spaces—restore order and peace of mind.</p>
+          </div>
+        </div>
+        <div class="flex flex-col rounded-xl shadow-2xl overflow-hidden service-card" data-aos="fade-zoom-in" data-aos-delay="400">
+          <<img src="https://images.pexels.com/photos/373888/pexels-photo-373888.jpeg" alt="Organized home office" class="w-full h-56 object-cover" loading="lazy">
+          <div class="p-7 flex-grow">
+            <h3 class="text-2xl font-bold section-title mb-2">Home & Office Organizing</h3>
+            <p class="text-base section-sub">Tame the chaos with custom organizing services for any room—closets, offices, or entire homes.</p>
+          </div>
+        </div>
+      </div>
+      <div class="mt-12 flex flex-col md:flex-row items-center p-7 rounded-xl shadow-2xl service-card" data-aos="fade-right">
+        <img src="https://images.pexels.com/photos/4239140/pexels-photo-4239140.jpeg" alt="Owner-led cleaning team" loading="lazy" class="w-full md:w-1/3 h-auto rounded-lg shadow-lg object-cover">
+        <div class="md:ml-8 mt-6 md:mt-0">
+          <h3 class="text-2xl font-bold section-title">Owner-Led Experience You Can Trust</h3>
+          <p class="text-base section-sub mt-2">
+            With 15 years in business, our small but mighty team delivers consistency, trust, and a personal touch. Every project is managed by the owner—guaranteeing quality and care you can count on.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="py-20" id="testimonials">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-10">
+        <h2 class="text-3xl md:text-4xl font-bold section-title" data-aos="fade-up">Trusted By Families & Businesses Across Wetumpka</h2>
+        <p class="text-lg section-sub mt-4 mb-10" data-aos="fade-up" data-aos-delay="100">
+          We’re new to online reviews—but our reputation is built on word-of-mouth and repeat clients. Here’s what your neighbors are saying:
+        </p>
+      </div>
+      <div class="grid md:grid-cols-1 lg:grid-cols-3 gap-8">
+        <div class="p-8 testimonial-card" data-aos="fade-up" data-aos-delay="200">
+          <p class="text-base mb-4">"Stephanie is always on time and treats my home with so much care. Highly recommended!"</p>
+          <p class="font-bold section-title text-lg">- Michelle W., Wetumpka Homeowner</p>
+        </div>
+        <div class="p-8 testimonial-card" data-aos="fade-up" data-aos-delay="300">
+          <p class="text-base mb-4">"We use Stephanie for our office cleaning—spotless every week and always flexible."</p>
+          <p class="font-bold section-title text-lg">- David S., Small Business Owner</p>
+        </div>
+        <div class="p-8 testimonial-card" data-aos="fade-up" data-aos-delay="400">
+          <p class="text-base mb-4">"No one does deep cleans like this! Garage never looked better."</p>
+          <p class="font-bold section-title text-lg">- Sandy L., Montgomery Resident</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Badges Section -->
+  <section class="py-20" id="trust">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold section-title mb-4" data-aos="fade-up">Insured, Trusted & Local</h2>
+      <p class="text-lg section-sub max-w-2xl mx-auto mb-10" data-aos="fade-up" data-aos-delay="100">
+        For your peace of mind, we’re fully insured, owner-operated, and locally based in Wetumpka.
+      </p>
+      <div class="flex flex-wrap justify-center gap-8">
+        <div class="p-8 trust-badge-card w-full sm:w-2/5 lg:w-1/3 text-center" data-aos="fade-up" data-aos-delay="200">
+          <svg class="w-14 h-14 mx-auto mb-3 text-silver" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.286zm0 13.036h.008v.008h-.008v-.008z" />
+          </svg>
+          <h3 class="text-xl font-semibold section-title">15+ Years Experience</h3>
+          <p class="text-base section-sub mt-2">Over a decade of hands-on expertise—every job is owner-led.</p>
+        </div>
+        <div class="p-8 trust-badge-card w-full sm:w-2/5 lg:w-1/3 text-center" data-aos="fade-up" data-aos-delay="300">
+          <svg class="w-14 h-14 mx-auto mb-3 text-silver" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14.25 9.75L16.5 12l-2.25 2.25m-4.5 0L7.5 12l2.25-2.25M6 20.25h12A2.25 2.25 0 0020.25 18V6A2.25 2.25 0 0018 3.75H6A2.25 2.25 0 003.75 6v12A2.25 2.25 0 006 20.25z" />
+          </svg>
+          <h3 class="text-xl font-semibold section-title">Fully Insured</h3>
+          <p class="text-base section-sub mt-2">We carry full liability insurance for your protection.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="py-20" id="faq">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-8">
+        <h2 class="text-3xl md:text-4xl font-bold section-title mb-2" data-aos="fade-up">Frequently Asked Questions</h2>
+      </div>
+      <div class="max-w-3xl mx-auto space-y-6">
+        <details class="p-6 rounded-lg faq-item" data-aos="fade-up" data-aos-delay="100">
+          <summary class="font-semibold text-lg section-title cursor-pointer">Are you fully insured?</summary>
+          <p class="text-base section-sub mt-3">Yes—your home or business is protected by our comprehensive insurance policy.</p>
+        </details>
+        <details class="p-6 rounded-lg faq-item" data-aos="fade-up" data-aos-delay="150">
+          <summary class="font-semibold text-lg section-title cursor-pointer">What areas do you serve?</summary>
+          <p class="text-base section-sub mt-3">Wetumpka, Montgomery, and surrounding communities.</p>
+        </details>
+        <details class="p-6 rounded-lg faq-item" data-aos="fade-up" data-aos-delay="200">
+          <summary class="font-semibold text-lg section-title cursor-pointer">Do you offer one-time deep cleans?</summary>
+          <p class="text-base section-sub mt-3">Absolutely. We offer both one-time and recurring services—whatever you need.</p>
+        </details>
+        <details class="p-6 rounded-lg faq-item" data-aos="fade-up" data-aos-delay="250">
+          <summary class="font-semibold text-lg section-title cursor-pointer">Do you provide cleaning for move-outs?</summary>
+          <p class="text-base section-sub mt-3">Yes! We’re happy to help you clean for moving day or special events.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="py-20" id="contact">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-10">
+        <h2 class="text-3xl md:text-4xl font-bold section-title mb-2" data-aos="fade-up">Get Your Free, No-Obligation Estimate</h2>
+        <p class="text-lg section-sub max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+          Ready to transform your space? Reach out today for a personalized quote—no strings attached.
+        </p>
+      </div>
+      <div class="flex flex-wrap -mx-4">
+        <div class="w-full lg:w-1/2 px-4 mb-10 lg:mb-0" data-aos="fade-right" data-aos-delay="200">
+          <div class="card p-8 h-full flex flex-col">
+            <h3 class="text-2xl font-bold mb-6 section-title">Contact Information</h3>
+            <div class="space-y-4">
+              <div><span class="font-semibold text-silver">Business Name:</span> Stephanie Kirkley Cleaning & Organizing</div>
+              <div><span class="font-semibold text-silver">Email:</span> <a href="mailto:info@stephaniekirkleycleaning.com" class="underline hover:text-white transition">info@stephaniekirkleycleaning.com</a></div>
+              <div><span class="font-semibold text-silver">Phone:</span> <a href="tel:+13345551234" class="underline hover:text-white transition">(334) 555-1234</a></div>
+              <div><span class="font-semibold text-silver">Primary Service Area:</span> Wetumpka, AL (Serving Wetumpka, Montgomery & Surrounding Areas)</div>
+            </div>
+            <div class="mt-8 flex-grow">
+              <h4 class="font-semibold text-silver mb-2">Our Service Location</h4>
+              <div class="contact-map overflow-hidden">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d85056.88269344464!2d-86.26709118423938!3d32.54119517784298!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x888c372d4fef53d7:0x6eb3ea3fd8c79dc8!2sWetumpka%2C%20AL!5e0!3m2!1sen!2sus!4v1690413136083!5m2!1sen!2sus"
+                  width="100%" height="230" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-full lg:w-1/2 px-4" data-aos="fade-left" data-aos-delay="200">
+          <div class="card p-8 h-full">
+            <form action="#" method="POST" name="contact">
+              <div class="space-y-5">
+                <div>
+                  <label for="name" class="block text-base font-medium text-silver">Full Name</label>
+                  <input type="text" name="name" id="name" required class="mt-1 block w-full shadow-sm py-3 px-4">
+                </div>
+                <div>
+                  <label for="email" class="block text-base font-medium text-silver">Email Address</label>
+                  <input type="email" name="email" id="email" required class="mt-1 block w-full shadow-sm py-3 px-4">
+                </div>
+                <div>
+                  <label for="subject" class="block text-base font-medium text-silver">Subject</label>
+                  <input type="text" name="subject" id="subject" required class="mt-1 block w-full shadow-sm py-3 px-4">
+                </div>
+                <div>
+                  <label for="message" class="block text-base font-medium text-silver">Message / Project Details</label>
+                  <textarea id="message" name="message" rows="5" required class="mt-1 block w-full shadow-sm py-3 px-4"></textarea>
+                </div>
+                <div>
+                  <button type="submit" class="w-full cta-button py-3 rounded-md text-lg shadow-lg">Send Message</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- Footer Section -->
+<footer style="background: #101010; color: #d1d3db; padding: 2.5rem 0 1.2rem 0; box-shadow: 0 -8px 32px 0 rgba(0,0,0,0.11); border-top: 1px solid #2a2a2a;">
+  <div class="container px-6 mx-auto text-center">
+    <div class="mb-3">
+      <span style="font-size:1.08rem; font-weight:600; letter-spacing:.04em;">
+        © 2025 Stephanie Kirkley Cleaning & Organizing
+      </span>
+      <span style="color:#a0aec0; margin-left: 10px;">
+        | Your Local Cleaning & Organizing Pros
+      </span>
+    </div>
+    <div class="mb-3" style="font-size: 1rem;">
+      Serving Wetumpka, Montgomery, and surrounding areas.<br>
+      <a href="mailto:info@stephaniekirkleycleaning.com" style="color:#e5e7eb; text-decoration:underline;">info@stephaniekirkleycleaning.com</a>
+       | 
+      <a href="tel:+13345551234" style="color:#e5e7eb; text-decoration:underline;">(334) 555-1234</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Aminos Chat Plugin -->
+<script src="https://app.aminos.ai/js/chat_plugin.js" data-bot-id="53123"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
-  AOS.init({
-    duration: 700,
-    once: true,
+  AOS.init({ 
+    duration: 800, // longer duration for smoother animations
+    once: true, 
     offset: 50,
+    easing: 'ease-out-cubic' // a more graceful easing function
   });
+  const pageUrl = encodeURIComponent(window.location.href);
+  const pageTitle = encodeURIComponent(document.title);
+  document.getElementById('share-facebook').href = `https://www.facebook.com/sharer/sharer.php?u=${pageUrl}`;
+  document.getElementById('share-x').href = `https://twitter.com/intent/tweet?url=${pageUrl}&text=${pageTitle}`;
+  document.getElementById('share-email').href = `mailto:?subject=${pageTitle}&body=Check out this cleaning & organizing service: ${pageUrl}`;
 </script>
-<script src="https://app.aminos.ai/js/chat_plugin.js" data-bot-id="53123"></script>
-
 </body>
 </html>
+            
