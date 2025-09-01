@@ -1,403 +1,316 @@
+
 <!DOCTYPE html>
-<html lang="en" style="scroll-behavior: smooth;">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Stephanie Kirkley Cleaning & Organizing</title>
-  <meta name="description" content="Professional house, garage, and commercial cleaning in Wetumpka and Montgomery, AL. 15+ years of meticulous service. Book your deep clean today!">
-  <meta name="keywords" content="cleaning Wetumpka, house cleaning Montgomery, deep cleaning Wetumpka, move out cleaning Wetumpka, garage cleaning, home organizing AL">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <style>
-    :root {
-      --deep-bg: #0d0d0d;
-      --lighter-bg: #141414;
-      /* UPDATED: Lighter grey for cards to increase contrast */
-      --card-gradient: linear-gradient(135deg, #2c2c2c 0%, #1f1f1f 100%);
-      --platinum: #f5f5f7;
-      --silver: #d1d5db;
-      --shadow: 0 8px 40px 0 rgba(0,0,0,0.45);
-      --shadow-hover: 0 16px 60px 0 rgba(0,0,0,0.65);
-    }
-    html, body {
-      background: var(--deep-bg);
-      color: var(--platinum);
-      overflow-x: hidden;
-    }
-    body { font-family: 'Roboto', sans-serif; position: relative;}
-    h1, h2, h3, h4 { font-family: 'Poppins', sans-serif; font-weight: 700; }
-    .container { max-width: 1100px; margin-left: auto; margin-right: auto; }
-    .section-title { color: var(--platinum); }
-    .section-sub { color: var(--silver);}
-    nav#main-nav {
-      position: fixed;
-      top: 0; left: 0; right: 0; z-index: 1000;
-      background: rgba(13, 13, 13, 0.85);
-      backdrop-filter: blur(10px);
-      box-shadow: var(--shadow);
-      border-bottom: 1px solid #222;
-    }
-    .hero-section {
-      background: linear-gradient(120deg, #17191c 70%, #25272b 100%);
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding-top: 90px;
-      position: relative;
-    }
-    .hero-title {
-      font-size: 2.5rem; font-weight: 700; margin-bottom: .2rem; letter-spacing: -1px;
-    }
-    @media (min-width: 480px) { .hero-title { font-size: 2.8rem; } }
-    @media (min-width: 640px) { .hero-title { font-size: 3.5rem; } }
-    @media (min-width: 1024px) { .hero-title { font-size: 4.1rem; } }
-    .cta-button {
-      background: linear-gradient(90deg, #b4ffd3 0%, #a3e9f5 100%);
-      color: #15191d;
-      font-weight: bold;
-      font-size: 1.35rem;
-      box-shadow: 0 8px 36px 0 rgba(120,190,170,0.20);
-      transition: transform 0.2s, box-shadow 0.2s;
-      border: none;
-      padding-left: 2.5rem;
-      padding-right: 2.5rem;
-    }
-    .cta-button:hover {
-      transform: scale(1.05);
-      box-shadow: var(--shadow-hover);
-    }
-    .hero-image-container {
-        position: relative;
-        display: inline-block;
-        border-radius: 1.5rem;
-        overflow: hidden; /* Ensures the overlay respects the border-radius */
-        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
-    }
-    .hero-image-overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(to top, rgba(13, 13, 13, 0.7) 0%, rgba(13, 13, 13, 0) 50%);
-        z-index: 1;
-    }
-    .hero-section .container {
-        position: relative;
-        z-index: 2;
-    }
-    /* Card Styles */
-    .service-card, .testimonial-card, .trust-badge-card, .faq-item, .card {
-        background: var(--card-gradient);
-        border-radius: 1rem;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        box-shadow: var(--shadow);
-    }
-    .service-card:hover, .testimonial-card:hover, .trust-badge-card:hover, .faq-item:hover, .card:hover {
-        transform: translateY(-5px);
-        box-shadow: var(--shadow-hover);
-    }
-    /* Input field styling */
-    input[type="text"], input[type="email"], textarea {
-        background-color: #2a2a2a;
-        color: var(--platinum);
-        border: 1px solid #444;
-        border-radius: 0.5rem;
-    }
-    input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
-        border-color: #b4ffd3;
-        box-shadow: 0 0 0 2px rgba(180, 255, 211, 0.3);
-        outline: none;
-    }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stephanie Kirkley | Premium Cleaning & Organizing</title>
+<meta name="description" content="Ready to impress? Experience the difference of a truly clean and organized home. Serving Wetumpka, Montgomery, and surrounding areas.">
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+--primary-pink-dark: #ec4899; /* Hot Pink /
+--primary-pink-light: #f472b6; / Lighter Hot Pink */
+--bg-dark: #111111;
+--bg-card: #1a1a1a;
+--text-main: #f0f0f0;
+--text-secondary: #a3a3a3;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  scroll-behavior: smooth;
+}
+
+.aura-glass {
+  background: rgba(17, 17, 17, 0.7);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.aura-btn-primary {
+  background: linear-gradient(90deg, var(--primary-pink-light) 0%, var(--primary-pink-dark) 100%);
+  color: white;
+  box-shadow: 0 4px 32px 0 rgba(236, 72, 153, 0.4);
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.aura-btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 40px 0 rgba(236, 72, 153, 0.5);
+}
+
+.aura-card {
+  background: var(--bg-card);
+  border: 1px solid rgba(255,255,255,0.07);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.aura-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(0,0,0,0.3);
+}
+
+.aura-border-pink {
+    border-color: rgba(236, 72, 153, 0.6);
+}
+
+.text-gradient-pink {
+  background-image: linear-gradient(90deg, var(--primary-pink-light), var(--primary-pink-dark));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+</style>
 </head>
-<body>
-<!-- NAVIGATION -->
-<nav id="main-nav" class="py-4">
-  <div class="container px-6 flex justify-between items-center">
-    <a href="#home" class="text-2xl font-bold section-title">Stephanie Kirkley Cleaning & Organizing</a>
-    <div class="hidden md:flex items-center space-x-8">
-      <a href="#services" class="text-lg hover:text-white transition-colors">Services</a>
-      <a href="#trust" class="text-lg hover:text-white transition-colors">About</a>
-      <a href="#testimonials" class="text-lg hover:text-white transition-colors">Testimonials</a>
-      <a href="#contact" class="cta-button py-2 px-6 rounded-full text-lg shadow-lg">Contact</a>
-    </div>
-  </div>
+<body class="antialiased">
+<header class="aura-glass fixed w-full top-0 left-0 z-50">
+<div class="mx-auto max-w-7xl px-6 lg:px-8">
+<div class="flex items-center justify-between h-20">
+<a href="#" class="flex items-center gap-3">
+<img class="w-10 h-10 rounded-full" src="" alt="Stephanie Kirkley Logo" />
+<span class="text-white font-semibold text-xl">Stephanie Kirkley</span>
+</a>
+<nav class="hidden md:flex items-center gap-8">
+<a href="#services" class="text-sm font-medium text-gray-300 hover:text-white transition-colors">Services</a>
+<a href="#about" class="text-sm font-medium text-gray-300 hover:text-white transition-colors">About</a>
+<a href="#testimonials" class="text-sm font-medium text-gray-300 hover:text-white transition-colors">Reviews</a>
+<a href="#contact" class="text-sm font-medium text-gray-300 hover:text-white transition-colors">Contact</a>
 </nav>
-
-<!-- HERO SECTION - UPDATED -->
-<header class="hero-section" id="home">
-  <div class="container px-6 py-24 md:py-32 text-center" data-aos="fade-in">
-    <div class="hero-image-container mb-8 max-w-md mx-auto" data-aos="zoom-in">
-        <div class="hero-image-overlay"></div>
-        <img 
-          src="https://raw.githubusercontent.com/theendgameishere/Kirkly/refs/heads/main/Stephanie_20250729_153831_0000.png"
-          alt="Stephanie Kirkley Cleaning & Organizing"
-          class="w-full h-auto block"
-        >
-    </div>
-    <h1 class="hero-title section-title" data-aos="fade-up" data-aos-delay="100">
-      Stephanie Kirkley Cleaning & Organizing
-    </h1>
-    <p class="mt-3 text-lg md:text-xl section-sub max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="200">
-      Transform Your Home or Business with Meticulous Cleaning & Organizing<br class="hidden md:block">
-      Owner-Led Service in Wetumpka, Montgomery & Beyond for 15+ Years
-    </p>
-    <div class="mt-8" data-aos="fade-up" data-aos-delay="300">
-      <a href="#contact" class="cta-button inline-block py-4 px-16 rounded-full text-2xl shadow-lg font-bold">
-        Book Your Deep Clean
-      </a>
-    </div>
-  </div>
+<div class="flex items-center gap-3">
+<a href="#contact" class="px-5 py-2.5 rounded-full text-sm font-semibold aura-btn-primary">
+Get Your Free Quote
+</a>
+</div>
+</div>
+</div>
 </header>
-
 <main>
-  <!-- Problem Section -->
-  <section class="py-20" id="problem">
-    <div class="container mx-auto px-6 text-center">
-      <h2 class="text-3xl md:text-4xl font-bold section-title mb-4" data-aos="fade-up">Finding a Reliable Cleaning Service Shouldn't Be Hard.</h2>
-      <p class="text-lg section-sub max-w-2xl mx-auto mb-10" data-aos="fade-up" data-aos-delay="100">
-        Tired of inconsistent cleaners, hidden fees, or impersonal franchise services? We bring owner-led accountability and a personal touch to every job.
-      </p>
-      <div class="grid md:grid-cols-3 gap-8">
-        <div class="p-6 service-card" data-aos="fade-up" data-aos-delay="200">
-          <svg class="w-14 h-14 mx-auto mb-3 text-silver" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-          <h3 class="text-xl font-semibold section-title mb-2">Unreliable Results</h3>
-          <p class="text-base section-sub">Many cleaning companies send new people every time—results vary and trust is lost.</p>
+<section class="relative min-h-screen pt-28 pb-16 flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img src="" alt="A friendly cleaning professional ready to make a home sparkle." class="w-full h-full object-cover opacity-30">
+<div class="absolute inset-0 bg-gradient-to-t from-bg-dark via-bg-dark/80 to-transparent"></div>
+</div>
+<div class="relative z-10 mx-auto max-w-4xl text-center px-6 lg:px-8">
+<h1 class="text-4xl sm:text-6xl md:text-7xl font-bold tracking-tight text-white">
+Ready to Impress?
+</h1>
+<p class="mt-6 text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto">
+Experience the difference of a truly <span class="text-gradient-pink font-semibold">clean & organized</span> home. We provide premium, reliable services that let you enjoy a spotless space without the hassle.
+</p>
+<div class="mt-10 flex gap-4 items-center justify-center">
+<a href="#contact" class="px-8 py-4 rounded-full text-lg font-semibold aura-btn-primary">
+Book Your Cleaning
+</a>
+</div>
+</div>
+</section>
+<section id="about" class="py-20 sm:py-24">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="mx-auto max-w-3xl text-center">
+            <h2 class="text-4xl sm:text-5xl font-bold tracking-tight text-white">
+                Why Choose Us?
+            </h2>
+            <p class="mt-4 text-lg text-gray-400">
+                We're more than just a cleaning service. We're your partners in creating a peaceful and pristine environment.
+            </p>
         </div>
-        <div class="p-6 service-card" data-aos="fade-up" data-aos-delay="300">
-          <svg class="w-14 h-14 mx-auto mb-3 text-silver" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
-          <h3 class="text-xl font-semibold section-title mb-2">Hidden Costs</h3>
-          <p class="text-base section-sub">Franchise cleaners often hide fees and upcharges. We offer transparent, upfront pricing.</p>
-        </div>
-        <div class="p-6 service-card" data-aos="fade-up" data-aos-delay="400">
-          <svg class="w-14 h-14 mx-auto mb-3 text-silver" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-1.414 1.414M6.343 17.657l-1.414 1.414M12 12l6 6m0-6l-6 6"></path></svg>
-          <h3 class="text-xl font-semibold section-title mb-2">Lack of Personal Touch</h3>
-          <p class="text-base section-sub">Big brands can’t match the care and attention of a true local business. We’re in your community, every day.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Services Section -->
-  <section class="py-20" id="services">
-    <div class="container mx-auto px-6">
-      <div class="text-center mb-14">
-        <h2 class="text-3xl md:text-4xl font-bold section-title" data-aos="fade-up">
-          The <span class="section-title">Stephanie Kirkley Cleaning & Organizing</span> Standard of Excellence
-        </h2>
-        <p class="text-lg section-sub max-w-2xl mx-auto mt-4" data-aos="fade-up" data-aos-delay="100">
-          We clean and organize with the attention to detail you deserve—whether it's your home, office, or garage. No job is too big or too small.
-        </p>
-      </div>
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div class="flex flex-col rounded-xl overflow-hidden service-card" data-aos="fade-zoom-in" data-aos-delay="200">
-          <img src="https://images.pexels.com/photos/4239035/pexels-photo-4239035.jpeg" alt="Professional cleaning kitchen counter" class="w-full h-56 object-cover" loading="lazy">
-          <div class="p-7 flex-grow">
-            <h3 class="text-2xl font-bold section-title mb-2">Deep House Cleaning</h3>
-            <p class="text-base section-sub">Thorough, top-to-bottom cleans for homes of any size. Perfect for regular upkeep or special occasions.</p>
-          </div>
-        </div>
-        <div class="flex flex-col rounded-xl overflow-hidden service-card" data-aos="fade-zoom-in" data-aos-delay="300">
-          <img src="https://images.pexels.com/photos/3616764/pexels-photo-3616764.jpeg" alt="Organized garage" class="w-full h-56 object-cover" loading="lazy">
-          <div class="p-7 flex-grow">
-            <h3 class="text-2xl font-bold section-title mb-2">
-              Garage, Basement & Attic Cleaning</h3>
-            <p class="text-base section-sub">Declutter and deep clean storage spaces—restore order and peace of mind.</p>
-          </div>
-        </div>
-        <div class="flex flex-col rounded-xl overflow-hidden service-card" data-aos="fade-zoom-in" data-aos-delay="400">
-          <img src="https://images.pexels.com/photos/373888/pexels-photo-373888.jpeg" alt="Organized home office" class="w-full h-56 object-cover" loading="lazy">
-          <div class="p-7 flex-grow">
-            <h3 class="text-2xl font-bold section-title mb-2">Home & Office Organizing</h3>
-            <p class="text-base section-sub">Tame the chaos with custom organizing services for any room—closets, offices, or entire homes.</p>
-          </div>
-        </div>
-      </div>
-      <div class="mt-12 flex flex-col md:flex-row items-center p-7 rounded-xl service-card" data-aos="fade-right">
-        <img src="https://images.pexels.com/photos/4239140/pexels-photo-4239140.jpeg" alt="Owner-led cleaning team" loading="lazy" class="w-full md:w-1/3 h-auto rounded-lg shadow-lg object-cover">
-        <div class="md:ml-8 mt-6 md:mt-0">
-          <h3 class="text-2xl font-bold section-title">Owner-Led Experience You Can Trust</h3>
-          <p class="text-base section-sub mt-2">
-            With 15+ years in business, our small but mighty team delivers consistency, trust, and a personal touch. Every project is managed by the owner—guaranteeing quality and care you can count on.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Testimonials Section -->
-  <section class="py-20" id="testimonials">
-    <div class="container mx-auto px-6">
-      <div class="text-center mb-10">
-        <h2 class="text-3xl md:text-4xl font-bold section-title" data-aos="fade-up">Trusted By Families & Businesses Across Wetumpka</h2>
-        <p class="text-lg section-sub mt-4 mb-10" data-aos="fade-up" data-aos-delay="100">
-          We’re new to online reviews—but our reputation is built on word-of-mouth and repeat clients. Here’s what your neighbors are saying:
-        </p>
-      </div>
-      <div class="grid md:grid-cols-1 lg:grid-cols-3 gap-8">
-        <div class="p-8 testimonial-card" data-aos="fade-up" data-aos-delay="200">
-          <p class="text-base mb-4">"Stephanie is always on time and treats my home with so much care. Highly recommended!"</p>
-          <p class="font-bold section-title text-lg">- Michelle W., Wetumpka Homeowner</p>
-        </div>
-        <div class="p-8 testimonial-card" data-aos="fade-up" data-aos-delay="300">
-          <p class="text-base mb-4">"We use Stephanie for our office cleaning—spotless every week and always flexible."</p>
-          <p class="font-bold section-title text-lg">- David S., Small Business Owner</p>
-        </div>
-        <div class="p-8 testimonial-card" data-aos="fade-up" data-aos-delay="400">
-          <p class="text-base mb-4">"No one does deep cleans like this! Garage never looked better."</p>
-          <p class="font-bold section-title text-lg">- Sandy L., Montgomery Resident</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Trust Badges Section -->
-  <section class="py-20" id="trust">
-    <div class="container mx-auto px-6 text-center">
-      <h2 class="text-3xl md:text-4xl font-bold section-title mb-4" data-aos="fade-up">Insured, Trusted & Local</h2>
-      <p class="text-lg section-sub max-w-2xl mx-auto mb-10" data-aos="fade-up" data-aos-delay="100">
-        For your peace of mind, we’re fully insured, owner-operated, and locally based in Wetumpka.
-      </p>
-      <div class="flex flex-wrap justify-center gap-8">
-        <div class="p-8 trust-badge-card w-full sm:w-2/5 lg:w-1/3 text-center" data-aos="fade-up" data-aos-delay="200">
-          <svg class="w-14 h-14 mx-auto mb-3 text-silver" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.286zm0 13.036h.008v.008h-.008v-.008z" />
-          </svg>
-          <h3 class="text-xl font-semibold section-title">15+ Years Experience</h3>
-          <p class="text-base section-sub mt-2">Over a decade of hands-on expertise—every job is owner-led.</p>
-        </div>
-        <div class="p-8 trust-badge-card w-full sm:w-2/5 lg:w-1/3 text-center" data-aos="fade-up" data-aos-delay="300">
-          <svg class="w-14 h-14 mx-auto mb-3 text-silver" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14.25 9.75L16.5 12l-2.25 2.25m-4.5 0L7.5 12l2.25-2.25M6 20.25h12A2.25 2.25 0 0020.25 18V6A2.25 2.25 0 0018 3.75H6A2.25 2.25 0 003.75 6v12A2.25 2.25 0 006 20.25z" />
-          </svg>
-          <h3 class="text-xl font-semibold section-title">Fully Insured</h3>
-          <p class="text-base section-sub mt-2">We carry full liability insurance for your protection.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ Section -->
-  <section class="py-20" id="faq">
-    <div class="container mx-auto px-6">
-      <div class="text-center mb-8">
-        <h2 class="text-3xl md:text-4xl font-bold section-title mb-2" data-aos="fade-up">Frequently Asked Questions</h2>
-      </div>
-      <div class="max-w-3xl mx-auto space-y-6">
-        <details class="p-6 rounded-lg faq-item" data-aos="fade-up" data-aos-delay="100">
-          <summary class="font-semibold text-lg section-title cursor-pointer">Are you fully insured?</summary>
-          <p class="text-base section-sub mt-3">Yes—your home or business is protected by our comprehensive insurance policy.</p>
-        </details>
-        <details class="p-6 rounded-lg faq-item" data-aos="fade-up" data-aos-delay="150">
-          <summary class="font-semibold text-lg section-title cursor-pointer">What areas do you serve?</summary>
-          <p class="text-base section-sub mt-3">Wetumpka, Montgomery, and surrounding communities.</p>
-        </details>
-        <details class="p-6 rounded-lg faq-item" data-aos="fade-up" data-aos-delay="200">
-          <summary class="font-semibold text-lg section-title cursor-pointer">Do you offer one-time deep cleans?</summary>
-          <p class="text-base section-sub mt-3">Absolutely. We offer both one-time and recurring services—whatever you need.</p>
-        </details>
-        <details class="p-6 rounded-lg faq-item" data-aos="fade-up" data-aos-delay="250">
-          <summary class="font-semibold text-lg section-title cursor-pointer">Do you provide cleaning for move-outs?</summary>
-          <p class="text-base section-sub mt-3">Yes! We’re happy to help you clean for moving day or special events.</p>
-        </details>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section class="py-20" id="contact">
-    <div class="container mx-auto px-6">
-      <div class="text-center mb-10">
-        <h2 class="text-3xl md:text-4xl font-bold section-title mb-2" data-aos="fade-up">Get Your Free, No-Obligation Estimate</h2>
-        <p class="text-lg section-sub max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
-          Ready to transform your space? Reach out today for a personalized quote—no strings attached.
-        </p>
-      </div>
-      <div class="flex flex-wrap -mx-4">
-        <div class="w-full lg:w-1/2 px-4 mb-10 lg:mb-0" data-aos="fade-right" data-aos-delay="200">
-          <div class="card p-8 h-full flex flex-col">
-            <h3 class="text-2xl font-bold mb-6 section-title">Contact Information</h3>
-            <div class="space-y-4">
-              <div><span class="font-semibold text-silver">Business Name:</span> Stephanie Kirkley Cleaning & Organizing</div>
-              <div><span class="font-semibold text-silver">Email:</span> <a href="mailto:info@stephaniekirkleycleaning.com" class="underline hover:text-white transition">info@stephaniekirkleycleaning.com</a></div>
-              <div><span class="font-semibold text-silver">Phone:</span> <a href="tel:+13345551234" class="underline hover:text-white transition">(334) 555-1234</a></div>
-              <div><span class="font-semibold text-silver">Primary Service Area:</span> Wetumpka, AL (Serving Wetumpka, Montgomery & Surrounding Areas)</div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
+            <div class="aura-card p-8 rounded-2xl text-center">
+                <div class="flex justify-center items-center h-16 w-16 rounded-full bg-pink-500/10 border border-pink-500/30 mx-auto">
+                    <svg xmlns="[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)" class="h-8 w-8 text-pink-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                </div>
+                <h3 class="mt-6 text-xl font-semibold text-white">Detail-Oriented</h3>
+                <p class="mt-2 text-gray-400">From baseboards to ceiling fans, no detail is too small. We ensure a consistently thorough clean every time.</p>
             </div>
-            <div class="mt-8 flex-grow">
-              <h4 class="font-semibold text-silver mb-2">Our Service Location</h4>
-              <div class="contact-map overflow-hidden rounded-lg">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d85056.88269344464!2d-86.26709118423938!3d32.54119517784298!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x888c372d4fef53d7:0x6eb3ea3fd8c79dc8!2sWetumpka%2C%20AL!5e0!3m2!1sen!2sus!4v1690413136083!5m2!1sen!2sus"
-                  width="100%" height="230" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-              </div>
+            <div class="aura-card p-8 rounded-2xl text-center">
+                <div class="flex justify-center items-center h-16 w-16 rounded-full bg-pink-500/10 border border-pink-500/30 mx-auto">
+                    <svg xmlns="[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)" class="h-8 w-8 text-pink-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                </div>
+                <h3 class="mt-6 text-xl font-semibold text-white">Reliable & Trusted</h3>
+                <p class="mt-2 text-gray-400">With over 15 years of experience, we're a fully insured, owner-led service you can count on to be on time, every time.</p>
             </div>
-          </div>
+            <div class="aura-card p-8 rounded-2xl text-center">
+                <div class="flex justify-center items-center h-16 w-16 rounded-full bg-pink-500/10 border border-pink-500/30 mx-auto">
+                    <svg xmlns="[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)" class="h-8 w-8 text-pink-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                </div>
+                <h3 class="mt-6 text-xl font-semibold text-white">Satisfaction Guaranteed</h3>
+                <p class="mt-2 text-gray-400">Your happiness is our priority. We stand by our work and will always make it right if you're not 100% satisfied.</p>
+            </div>
         </div>
-        <div class="w-full lg:w-1/2 px-4" data-aos="fade-left" data-aos-delay="200">
-          <div class="card p-8 h-full">
-            <form action="#" method="POST" name="contact">
-              <div class="space-y-5">
-                <div>
-                  <label for="name" class="block text-base font-medium text-silver">Full Name</label>
-                  <input type="text" name="name" id="name" required class="mt-1 block w-full shadow-sm py-3 px-4">
-                </div>
-                <div>
-                  <label for="email" class="block text-base font-medium text-silver">Email Address</label>
-                  <input type="email" name="email" id="email" required class="mt-1 block w-full shadow-sm py-3 px-4">
-                </div>
-                <div>
-                  <label for="subject" class="block text-base font-medium text-silver">Subject</label>
-                  <input type="text" name="subject" id="subject" required class="mt-1 block w-full shadow-sm py-3 px-4">
-                </div>
-                <div>
-                  <label for="message" class="block text-base font-medium text-silver">Message / Project Details</label>
-                  <textarea id="message" name="message" rows="5" required class="mt-1 block w-full shadow-sm py-3 px-4"></textarea>
-                </div>
-                <div>
-                  <button type="submit" class="w-full cta-button py-3 rounded-md text-lg shadow-lg">Send Message</button>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
     </div>
-  </section>
-</main>
+</section>
 
-<!-- Footer Section -->
-<footer style="background: #101010; color: #d1d3db; padding: 2.5rem 0 1.2rem 0; box-shadow: 0 -8px 32px 0 rgba(0,0,0,0.11); border-top: 1px solid #2a2a2a;">
-  <div class="container px-6 mx-auto text-center">
-    <div class="mb-3">
-      <span style="font-size:1.08rem; font-weight:600; letter-spacing:.04em;">
-        © 2025 Stephanie Kirkley Cleaning & Organizing
-      </span>
-      <span style="color:#a0aec0; margin-left: 10px;">
-        | Your Local Cleaning & Organizing Pros
-      </span>
+<section id="services" class="py-20 sm:py-24 bg-black/30">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="mx-auto max-w-3xl text-center">
+            <h2 class="text-4xl sm:text-5xl font-bold tracking-tight text-white">
+                Services Tailored For You
+            </h2>
+            <p class="mt-4 text-lg text-gray-400">
+                Whether you need a one-time refresh or regular upkeep, we have a plan that fits your life and budget.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-16">
+            <article class="aura-card rounded-2xl p-8 flex flex-col">
+                <h3 class="text-xl font-semibold text-white">Basic Clean</h3>
+                <p class="text-sm text-gray-400 mt-2 flex-grow">Perfect for regular maintenance to keep your home fresh and tidy.</p>
+                <div class="mt-6 flex items-baseline gap-1">
+                    <span class="text-4xl font-bold tracking-tight">$99</span>
+                    <span class="text-sm text-gray-400">/ starting</span>
+                </div>
+                <ul class="mt-6 space-y-3 text-sm text-gray-300">
+                    <li class="flex gap-3"><svg xmlns="[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)" class="h-5 w-5 text-pink-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>General Dusting</li>
+                    <li class="flex gap-3"><svg xmlns="[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)" class="h-5 w-5 text-pink-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>Floor Cleaning</li>
+                    <li class="flex gap-3"><svg xmlns="[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)" class="h-5 w-5 text-pink-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>Kitchen & Bath Surfaces</li>
+                </ul>
+                <a href="#contact" class="mt-8 block w-full text-center px-6 py-3 rounded-full text-sm font-semibold aura-btn-primary">Book Now</a>
+            </article>
+
+            <article class="aura-card aura-border-pink rounded-2xl p-8 flex flex-col relative ring-2 ring-pink-500">
+                <div class="absolute -top-3 right-6 bg-pink-500 text-white text-xs font-bold px-3 py-1 rounded-full">MOST POPULAR</div>
+                <h3 class="text-xl font-semibold text-white">Deep Clean</h3>
+                <p class="text-sm text-gray-400 mt-2 flex-grow">A comprehensive, top-to-bottom scrub that leaves your home immaculate.</p>
+                <div class="mt-6 flex items-baseline gap-1">
+                    <span class="text-4xl font-bold tracking-tight">$189</span>
+                    <span class="text-sm text-gray-400">/ starting</span>
+                </div>
+                <ul class="mt-6 space-y-3 text-sm text-gray-300">
+                    <li class="flex gap-3"><svg xmlns="[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)" class="h-5 w-5 text-pink-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>Everything in Basic, plus:</li>
+                    <li class="flex gap-3"><svg xmlns="[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)" class="h-5 w-5 text-pink-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>Baseboards & Doors</li>
+                    <li class="flex gap-3"><svg xmlns="[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)" class="h-5 w-5 text-pink-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>Detailed Appliance Exteriors</li>
+                </ul>
+                <a href="#contact" class="mt-8 block w-full text-center px-6 py-3 rounded-full text-sm font-semibold aura-btn-primary">Get a Deep Clean</a>
+            </article>
+
+            <article class="aura-card rounded-2xl p-8 flex flex-col">
+                <h3 class="text-xl font-semibold text-white">Organizing</h3>
+                <p class="text-sm text-gray-400 mt-2 flex-grow">Transform cluttered areas into functional, serene spaces.</p>
+                <div class="mt-6 flex items-baseline gap-1">
+                    <span class="text-4xl font-bold tracking-tight">Custom</span>
+                </div>
+                <ul class="mt-6 space-y-3 text-sm text-gray-300">
+                    <li class="flex gap-3"><svg xmlns="[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)" class="h-5 w-5 text-pink-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>Pantry & Closet Systems</li>
+                    <li class="flex gap-3"><svg xmlns="[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)" class="h-5 w-5 text-pink-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>Decluttering & Downsizing</li>
+                    <li class="flex gap-3"><svg xmlns="[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)" class="h-5 w-5 text-pink-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>Space Optimization</li>
+                </ul>
+                <a href="#contact" class="mt-8 block w-full text-center px-6 py-3 rounded-full text-sm font-semibold aura-btn-primary">Request a Consult</a>
+            </article>
+            
+            <article class="aura-card rounded-2xl p-8 flex flex-col">
+                <h3 class="text-xl font-semibold text-white">Commercial</h3>
+                <p class="text-sm text-gray-400 mt-2 flex-grow">Professional cleaning to keep your business looking its best.</p>
+                <div class="mt-6 flex items-baseline gap-1">
+                    <span class="text-4xl font-bold tracking-tight">Custom</span>
+                </div>
+                <ul class="mt-6 space-y-3 text-sm text-gray-300">
+                    <li class="flex gap-3"><svg xmlns="[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)" class="h-5 w-5 text-pink-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>Office & Retail Spaces</li>
+                    <li class="flex gap-3"><svg xmlns="[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)" class="h-5 w-5 text-pink-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>Flexible Scheduling</li>
+                    <li class="flex gap-3"><svg xmlns="[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)" class="h-5 w-5 text-pink-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>Advanced Sanitization</li>
+                </ul>
+                <a href="#contact" class="mt-8 block w-full text-center px-6 py-3 rounded-full text-sm font-semibold aura-btn-primary">Get a Business Quote</a>
+            </article>
+        </div>
     </div>
-    <div class="mb-3" style="font-size: 1rem;">
-      Serving Wetumpka, Montgomery, and surrounding areas.<br>
-      <a href="mailto:info@stephaniekirkleycleaning.com" style="color:#e5e7eb; text-decoration:underline;">info@stephaniekirkleycleaning.com</a>
-       | 
-      <a href="tel:+13345551234" style="color:#e5e7eb; text-decoration:underline;">(334) 555-1234</a>
+</section>
+
+<section id="testimonials" class="py-20 sm:py-24">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-3xl text-center">
+        <h2 class="text-4xl sm:text-5xl font-bold tracking-tight text-white">Loved By Your Neighbors</h2>
+        <p class="mt-4 text-lg text-gray-400">
+          Don't just take our word for it. Here's what our happy clients have to say.
+        </p>
+    </div>
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-16">
+        <figure class="aura-card rounded-2xl p-8">
+            <blockquote class="text-gray-300">
+                <p>"Stephanie is a lifesaver! Our house has never looked better. Her attention to detail is incredible. I can finally relax on the weekends instead of worrying about cleaning."</p>
+            </blockquote>
+            <figcaption class="mt-6 flex items-center gap-4">
+                <img class="h-12 w-12 rounded-full object-cover" src="[https://i.pravatar.cc/150?u=a042581f4e29026704d](https://i.pravatar.cc/150?u=a042581f4e29026704d)" alt="">
+                <div>
+                    <div class="font-semibold text-white">Sarah W.</div>
+                    <div class="text-gray-400 text-sm">Montgomery, AL</div>
+                </div>
+            </figcaption>
+        </figure>
+        <figure class="aura-card rounded-2xl p-8">
+            <blockquote class="text-gray-300">
+                <p>"We hired Stephanie for our office space, and the difference is night and day. Professional, reliable, and the team is so friendly. Highly recommend for any business."</p>
+            </blockquote>
+            <figcaption class="mt-6 flex items-center gap-4">
+                <img class="h-12 w-12 rounded-full object-cover" src="[https://i.pravatar.cc/150?u=a042581f4e29026704e](https://i.pravatar.cc/150?u=a042581f4e29026704e)" alt="">
+                <div>
+                    <div class="font-semibold text-white">Mark C.</div>
+                    <div class="text-gray-400 text-sm">Wetumpka, AL</div>
+                </div>
+            </figcaption>
+        </figure>
+        <figure class="aura-card rounded-2xl p-8">
+            <blockquote class="text-gray-300">
+                <p>"The professional organizing service was a game-changer. Our pantry and closet have never looked so good. It's so much easier to find things now! Worth every penny."</p>
+            </blockquote>
+            <figcaption class="mt-6 flex items-center gap-4">
+                <img class="h-12 w-12 rounded-full object-cover" src="[https://i.pravatar.cc/150?u=a042581f4e29026704f](https://i.pravatar.cc/150?u=a042581f4e29026704f)" alt="">
+                <div>
+                    <div class="font-semibold text-white">Jane S.</div>
+                    <div class="text-gray-400 text-sm">Prattville, AL</div>
+                </div>
+            </figcaption>
+        </figure>
     </div>
   </div>
-</footer>
+</section>
 
-<!-- Aminos Chat Plugin -->
-<script src="https://app.aminos.ai/js/chat_plugin.js" data-bot-id="53123"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init({ 
-    duration: 800, // longer duration for smoother animations
-    once: true, 
-    offset: 50,
-    easing: 'ease-out-cubic' // a more graceful easing function
-  });
-</script>
+<section id="contact" class="py-20 sm:py-24">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="aura-card rounded-3xl p-8 sm:p-16 relative overflow-hidden">
+            <div class="absolute -top-1/2 -right-1/4 w-96 h-96 bg-pink-500/10 rounded-full blur-3xl -z-10"></div>
+            <div class="absolute -bottom-1/2 -left-1/4 w-96 h-96 bg-pink-500/10 rounded-full blur-3xl -z-10"></div>
+            <div class="text-center">
+                <h2 class="text-4xl sm:text-5xl font-bold tracking-tight text-white">
+                    Get Your Free, No-Obligation Quote!
+                </h2>
+                <p class="mt-4 text-lg text-gray-400 max-w-2xl mx-auto">
+                    Ready for a spotless space? Contact us today. We'll get back to you promptly to discuss your needs and provide a personalized quote.
+                </p>
+                <a href="mailto:contact@stephaniekirkley.com" class="mt-10 inline-block px-8 py-4 rounded-full text-lg font-semibold aura-btn-primary">
+                    Email Us Today
+                </a>
+                <p class="mt-4 text-sm text-gray-500">Or call us at (555) 123-4567</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+</main>
+<footer class="mt-20 border-t border-white/10">
+<div class="mx-auto max-w-7xl px-6 lg:px-8 py-12">
+<div class="flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="flex items-center gap-3">
+<img class="w-10 h-10 rounded-full" src="" alt="Stephanie Kirkley Logo" />
+<span class="text-white font-semibold text-xl">Stephanie Kirkley Cleaning & Organizing</span>
+</div>
+<nav class="flex flex-wrap justify-center gap-x-6 gap-y-2">
+<a href="#services" class="text-sm font-medium text-gray-400 hover:text-white transition-colors">Services</a>
+<a href="#about" class="text-sm font-medium text-gray-400 hover:text-white transition-colors">About</a>
+<a href="#testimonials" class="text-sm font-medium text-gray-400 hover:text-white transition-colors">Reviews</a>
+</nav>
+</div>
+<div class="mt-8 pt-8 border-t border-white/10 text-center text-sm text-gray-500">
+<p>&copy; 2025 Stephanie Kirkley. All rights reserved. Made with ❤️ in Alabama.</p>
+</div>
+</div>
+</footer>
 </body>
 </html>
+
+  
